@@ -4,7 +4,7 @@ library(knitr)
 library(ggpubr)
 books <- read_csv("STAT_Assignment_4/books.csv")
 View(books)
-my_data$group <- ordered(my_data$group,
+books$author <- ordered(books$author,
                          levels = c("Clancy", "Rowling", "Tolstoy"))
 
 # (a) Side by side box plots
